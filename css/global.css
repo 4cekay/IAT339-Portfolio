@@ -1,0 +1,32 @@
+body {
+  background-color: var(--bg-dark);
+}
+
+/* HEADER */
+
+#portfolio-header {
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: var(--text-white);
+}
+
+#portfolio-title {
+  width: 100%;
+
+  padding: 1rem 0;
+  background-color: var(--main-theme);
+
+  font-size: 4rem;
+}
+
+#portfolio-nav {
+  /* background: linear-gradient(
+    180deg,
+    var(--main-translucent),
+    var(--bg-dark) 100%
+  ); */
+}

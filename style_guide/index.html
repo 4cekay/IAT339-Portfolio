@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="./css/flexbox.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/guide.css" />
+
+    <!-- LinkedIn Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="flexbox header" id="guide-header">
@@ -20,11 +26,10 @@
       <nav class="header-nav" id="guide-nav">
         <ul class="flexbox nav-list">
           <li class="nav-link">
-            <a href="#interactive-elements">Interactive Elements</a>
-          </li>
-
-          <li class="nav-link">
             <a href="#text-styling">Text Styling</a>
+          </li>
+          <li class="nav-link">
+            <a href="#interactive-elements">Interactive Elements</a>
           </li>
 
           <li class="nav-link">
@@ -43,36 +48,301 @@
     </div>
 
     <div class="main-content flexbox" id="guide-content">
-      <section class="flexbox guide-section" id="interactive-elements">
-        <h1 class="guide-heading">Interactive Elements</h1>
-      </section>
       <section class="flexbox guide-section" id="text-styling">
         <h1 class="guide-heading">Text Styling</h1>
         <div class="element-container">
-          <h2 class="element-title">H1</h2>
+          <h2 class="element-title">Headings</h2>
+
+          <div class="flexbox element-row">
+            <div class="flexbox selector-container">
+              <h3 class="element-subheading">CSS Selectors</h3>
+
+              <ul class="selectors">
+                <li>.page-title</li>
+                <li>.section-title</li>
+                <li>.section-subheading</li>
+                <li>.subtitle</li>
+              </ul>
+            </div>
+
+            <div class="flexbox code-container">
+              <h3 class="element-subheading">Sample Code</h3>
+
+              <pre><code>&lt;h1 class="page-title"&gt;Portfolio&lt;/h1&gt;
+&lt;h2 class="element-title"&gt;Projects&lt;/h2&gt;
+&lt;h3 class="element-subheading"&gt;Project #1&lt;/h3&gt;
+&lt;h4 class="subtitle" &gt;IAT339 | Fall 2026&lt;/h4&gt;
+</code></pre>
+            </div>
+
+            <div class="flexbox rendered-container">
+              <h3 class="element-subheading">Rendered Element</h3>
+
+              <div class="flexbox rendered-column">
+                <h1 class="page-title" id="sample-page-title">Portfolio</h1>
+                <h2 class="element-title" id="sample-section-title">
+                  Projects
+                </h2>
+                <h3 class="element-subheading" id="sample-section-subheading">
+                  Project #1
+                </h3>
+                <h4 class="subtitle" id="sample-subtitle">
+                  IAT339 | Fall 2026
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="element-container">
-          <h2 class="element-title">H2</h2>
-        </div>
-        <div class="element-container">
-          <h2 class="element-title">H3</h2>
-        </div>
-        <div class="element-container">
-          <h2 class="element-title">H4</h2>
-        </div>
+
         <div class="element-container">
           <h2 class="element-title">Paragraphs</h2>
+
+          <div class="flexbox element-row">
+            <div class="flexbox selector-container">
+              <h3 class="element-subheading">CSS Selectors</h3>
+
+              <ul class="selectors">
+                <li>p</li>
+                <li>.body-text</li>
+              </ul>
+            </div>
+
+            <div class="flexbox code-container">
+              <h3 class="element-subheading">Sample Code</h3>
+
+              <pre><code>&lt;p class="body-text"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+  enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  nisi ut aliquip ex ea commodo consequat.
+&lt;p&gt;
+
+</code></pre>
+            </div>
+
+            <div class="flexbox rendered-container">
+              <h3 class="element-subheading">Rendered Element</h3>
+
+              <p class="body-text" id="sample-body-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+      <section class="flexbox guide-section" id="interactive-elements">
+        <h1 class="guide-heading">Interactive Elements</h1>
+
+        <div class="flexbox element-container">
+          <h2 class="element-title">Navigation Link</h2>
+
+          <div class="flexbox element-row">
+            <div class="flexbox selector-container">
+              <h3 class="element-subheading">CSS Selector</h3>
+
+              <ul class="selectors">
+                <li>.nav-link</li>
+                <li>.nav link a</li>
+              </ul>
+            </div>
+
+            <div class="flexbox code-container">
+              <h3 class="element-subheading">Sample Code</h3>
+
+              <pre><code>&lt;li class="nav-link"&gt;
+  &lt;a href="#section-name"&gt; Section Name &lt;/a&gt;
+&lt;li&gt;
+</code></pre>
+            </div>
+
+            <div class="flexbox rendered-container">
+              <h3 class="element-subheading">Rendered Element</h3>
+
+              <p class="nav-link" id="sample-nav-link">Section Name</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flexbox element-container">
+          <h2 class="element-title">Image Link</h2>
+
+          <div class="flexbox element-row">
+            <div class="flexbox selector-container">
+              <h3 class="element-subheading">CSS Selector</h3>
+
+              <ul class="selectors">
+                <li>.image-link</li>
+              </ul>
+            </div>
+
+            <div class="flexbox code-container">
+              <h3 class="element-subheading">Sample Code</h3>
+
+              <pre><code>&lt;a href="#" class="image-link"
+  &gt;&lt;img
+    src="sample-img.png"
+    alt="Example of an image in a link anchor"
+/&gt;&lt;/a&gt;
+</code></pre>
+            </div>
+
+            <div class="flexbox rendered-container">
+              <h3 class="element-subheading">Rendered Element</h3>
+
+              <a href="#" class="image-link" id="sample-image-link"
+                ><img
+                  src="./assets/macrolepiotaprocera-ish.png"
+                  alt="Example of an image in a link anchor"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flexbox element-container">
+          <h2 class="element-title">Contact Button</h2>
+
+          <div class="flexbox element-row">
+            <div class="flexbox selector-container">
+              <h3 class="element-subheading">CSS Selector</h3>
+
+              <ul class="selectors">
+                <li>.contact-button</li>
+                <li>.button-icon</li>
+              </ul>
+            </div>
+
+            <div class="flexbox code-container">
+              <h3 class="element-subheading">Sample Code</h3>
+
+              <pre><code>&lt;a
+  href="https://www.linkedin.com/"
+  target="_blank"
+  class="contact-button"
+&gt;
+  &lt;i class="fa fa-linkedin-square button-icon"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+            </div>
+
+            <div class="flexbox rendered-container">
+              <h3 class="element-subheading">Rendered Element</h3>
+
+              <a
+                href="https://www.linkedin.com/in/kc-fedellaga/"
+                target="_blank"
+                class="contact-button"
+              >
+                <i class="fa fa-linkedin-square" id="sample-contact-button"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flexbox element-container">
+          <h2 class="element-title">Video Embed</h2>
+
+          <div class="flexbox element-row">
+            <div class="flexbox selector-container">
+              <h3 class="element-subheading">CSS Selector</h3>
+
+              <ul class="selectors">
+                <li>.video-embed</li>
+              </ul>
+            </div>
+
+            <div class="flexbox code-container">
+              <h3 class="element-subheading">Sample Code</h3>
+            </div>
+
+            <div class="flexbox rendered-container">
+              <h3 class="element-subheading">Rendered Element</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="flexbox guide-section" id="combined-elements">
         <h1 class="guide-heading">Combined Elements</h1>
+
+        <div class="element-container">
+          <h2 class="element-title">Navigation Bar</h2>
+          <div class="flexbox element-row">
+            <div class="flexbox selector-container">
+              <h3 class="element-subheading">CSS Selectors</h3>
+
+              <ul class="selectors">
+                <li>.nav-bar</li>
+                <li>.nav-list</li>
+              </ul>
+            </div>
+
+            <div class="flexbox code-container">
+              <h3 class="element-subheading">Sample Code</h3>
+
+              <pre><code>&lt;li class="nav-link"&gt;
+  &lt;a href="#section-name"&gt; Section Name &lt;/a&gt;
+&lt;li&gt;
+</code></pre>
+            </div>
+
+            <div class="flexbox rendered-container">
+              <h3 class="element-subheading">Rendered Element</h3>
+              <nav class="header-nav" id="sample-nav-bar">
+                <ul class="flexbox nav-list">
+                  <li class="nav-link">
+                    <a href="#combined-elements">About Me</a>
+                  </li>
+                  <li class="nav-link">
+                    <a href="#combined-elements">Projects</a>
+                  </li>
+
+                  <li class="nav-link">
+                    <a href="#combined-elements">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="element-container">
+          <h2 class="element-title">Navigation Bar</h2>
+          <div class="flexbox element-row">
+            <div class="flexbox selector-container">
+              <h3 class="element-subheading">CSS Selector</h3>
+
+              <ul class="selectors">
+                <li>.nav-link</li>
+                <li>.nav link a</li>
+              </ul>
+            </div>
+
+            <div class="flexbox code-container">
+              <h3 class="element-subheading">Sample Code</h3>
+
+              <pre><code>&lt;li class="nav-link"&gt;
+  &lt;a href="#section-name"&gt; Section Name &lt;/a&gt;
+&lt;li&gt;
+</code></pre>
+            </div>
+
+            <div class="flexbox rendered-container">
+              <h3 class="element-subheading">Rendered Element</h3>
+
+              <p class="nav-link" id="sample-nav-link">Section Name</p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="flexbox guide-section" id="landing-template">
+      <!-- <section class="flexbox guide-section" id="landing-template">
         <h1 class="guide-heading">Landing Template</h1>
       </section>
       <section class="flexbox guide-section" id="project-template">
         <h1 class="guide-heading">Project Template</h1>
-      </section>
+      </section> -->
     </div>
   </body>
 </html>

@@ -18,12 +18,23 @@
   font-style: normal;
 }
 
+.nav-link {
+  font-family: "PREVALENT SANS PRO - Bold", sans-serif;
+}
+
 .subheading {
   font-family: "PREVALENT SANS PRO - Bold", serif;
 }
 
-.nav-link {
-  font-family: "PREVALENT SANS PRO - Bold", sans-serif;
+@font-face {
+  font-family: "PREVALENT SANS PRO - Medium";
+  src: url("./fonts/PREVALENTSANSPRO-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.element-subheading {
+  font-family: "PREVALENT SANS PRO - Medium", serif;
 }
 
 @font-face {
@@ -38,6 +49,11 @@
   font-weight: 600;
 }
 
+.element-title {
+  font-family: "Rosehot", serif;
+  font-weight: 400;
+}
+
 @font-face {
   font-family: "PREVALENT SANS PRO - Regular";
   src: url("./fonts/PREVALENTSANSPRO-Regular.ttf") format("truetype");
@@ -45,9 +61,17 @@
   font-style: normal;
 }
 
-.element-title {
-  font-family: "Rosehot", serif;
-  font-weight: 400;
+.selectors {
+  font-family: "PREVALENT SANS PRO - Regular", serif;
+  font-weight: 300;
+}
 
-  text-decoration: underline;
+.subtitle {
+  font-family: "PREVALENT SANS PRO - Regular", serif;
+  font-weight: 300;
+}
+
+.body-text {
+  font-family: "PREVALENT SANS PRO - Regular", serif;
+  font-weight: 200;
 }
