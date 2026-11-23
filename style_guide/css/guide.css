@@ -81,6 +81,7 @@ body {
   transition: background-color 0.18s ease-in-out;
 }
 .nav-link:hover {
+  cursor: pointer;
   background-color: var(--main-lighter-translucent);
 
   a {
@@ -111,10 +112,12 @@ body {
   width: 100%;
   padding: 2rem;
 
+  border-top: 0.5rem double var(--main-theme);
+
   background: linear-gradient(
     180deg,
     var(--main-translucent),
-    var(--bg-dark) 100%
+    var(--bg-dark) 70%
   );
 }
 

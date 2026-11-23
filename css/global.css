@@ -6,27 +6,37 @@ body {
 
 #portfolio-header {
   flex-direction: row;
-
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+
+  background: linear-gradient(
+    180deg,
+    var(--main-translucent),
+    var(--bg-dark) 100%
+  );
 
   text-align: center;
   color: var(--text-white);
 }
 
 #portfolio-title {
-  width: 100%;
-
   padding: 1rem 0;
-  background-color: var(--main-theme);
 
   font-size: 4rem;
 }
 
 #portfolio-nav {
-  /* background: linear-gradient(
-    180deg,
-    var(--main-translucent),
-    var(--bg-dark) 100%
-  ); */
+  width: fit-content;
+}
+#portfolio-nav .nav-list {
+  gap: 0.5rem;
+  padding: 0;
+}
+.nav-link {
+  padding: 1rem;
+
+  font-size: 1.5rem;
 }
