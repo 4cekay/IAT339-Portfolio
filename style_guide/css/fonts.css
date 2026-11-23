@@ -1,14 +1,53 @@
-/* @font-face {
-  font-family: "Rothenburg Decorative";
-  src: url("./fonts/RothenburgDecorative.woff2") format("woff2");
+@font-face {
+  font-family: "NCL Gasdrifo";
+  src: url("./fonts/NCLGasdrifo-Demo.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
-} */
+}
 
-/* Reference: https://cssgradient.io/blog/css-gradient-text/ */
-
-/* .logotype {
-  font-family: "Rothenburg Decorative", serif;
-  font-weight: 400;
+.page-title {
+  font-family: "NCL Gasdrifo", serif;
+  font-weight: 600;
   font-style: normal;
-} */
+}
+
+@font-face {
+  font-family: "PREVALENT SANS PRO - Bold";
+  src: url("./fonts/PREVALENTSANSPRO-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.subheading {
+  font-family: "PREVALENT SANS PRO - Bold", serif;
+}
+
+.nav-link {
+  font-family: "PREVALENT SANS PRO - Bold", sans-serif;
+}
+
+@font-face {
+  font-family: "Rosehot";
+  src: url("./fonts/Rosehot.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.guide-heading {
+  font-family: "Rosehot", serif;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "PREVALENT SANS PRO - Regular";
+  src: url("./fonts/PREVALENTSANSPRO-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.element-title {
+  font-family: "Rosehot", serif;
+  font-weight: 400;
+
+  text-decoration: underline;
+}
